@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flag {
+    width: 20px;
+    margin-right: 5px;
+}
+
+#flagsDropdown {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.dropdown-item {
+    width: 100%;
+}
+
+.dropdown-menu {
+    min-width: 0rem;
+}
+
+.carousel-caption {
+    max-width: 450px;
+}
+
+.carousel1 {
+    margin: 0 auto;
+    margin-right: 100px;
+}
+
+.img {
+    width: 150px;
+}
+
+
+.point {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    margin-top: -200px;
+}
+
+.column1, .column2 {
+    position: absolute;
+    height: 150px;
+    width: 2px;
+    background-color: black;
+    margin-top: -200px;
+    margin-left: 3px;
+}
+
+.column2 {
+    height: 100px;
+    position: relative;
+}
+
+p {
+    margin-bottom: 0px;
+}
+
+.header {
+    padding: 16px;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+}
+
+.main-text {
+    padding: 16px;
+    line-height: 24px;
+    display: none;
+    background-color: white;
+    color: black;
+}
+
+.header span {
+    position: absolute;
+    right: 20px;
+}
+
+.active {
+    display: block;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 10px;
+    margin: 0 auto;
+}
+
+.search-bar input {
+    background-color: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 5px 15px;
+    font-size: 20px;
+    color: black;
+}
+
+::placeholder {
+    color: black;
+}
+
+.search-bar button img {
+    width: 25px ! important;
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    cursor: pointer;
+}
+
+footer {
+    background: url(./../img/footer_ad0f20f1-29b5-4188-8127-a6667ac6aea9.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width:600px) {
+    .carousel1 {
+        margin-left: 0px;
+    }
+
+    .carousel-caption {
+        margin: 0 auto;
+        background-color: black;
+        color: white;
+    }
+}
+
+@media screen and (max-width:510px) {
+    .carousel-item h1, .carousel-item h5 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .img {
+        width: 100px !important;
+    }
+
+    .card-body {
+        padding: 0;
+    }
+
+    .card-title h5 {
+        display: none;
+    }
+
+    .im {
+        display: none;
+    }
+
+    .point {
+        display: none;
+    }
+
+    .column1, .column2 {
+        display: none;
+    }
+
+    .loop {
+        flex-wrap: wrap;
+    }
+}
