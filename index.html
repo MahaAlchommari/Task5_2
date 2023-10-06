@@ -364,6 +364,13 @@
                 <h1>SEE WHY CUSTOMERS LOVE THE OUR MOBILES</h1>
                 <P class="fs-5 m-4">DESIGNED TO PERFECTION</P>
             </div>
+            <div class="products">
+                <div class="controls d-flex text-center justify-content-center">
+                    <span class="pre-btn"><i class="fa-solid fa-angle-left"></i></span>
+                    <span class="next-btn"><i class="fa-solid fa-angle-right"></i></span>
+                </div>
+            </div>
+        </div>
     </section>
     <section>
         <section class="text-center bg-dark p-5">
@@ -467,18 +474,13 @@
             crossorigin="anonymous"></script>
         <!-- link js -->
         <script src="./assets/js/script.js"></script>
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                fetch("https://dummyjson.com/products/category/smartphones")
-                    .then((res) => res.json())
-                    .then((data) => {
-                        //code
-                    })
-                    .catch((error) => {
-                        console.error("Error fetching data:", error);
-                    });
-            });
-        </script>
+        <!-- <script>
+                    fetch('https://dummyjson.com/api/posts')
+                        .then(response => response.json())
+                        .then(data => {
+                            console.log(data);
+                        });
+                </script> -->
 </body>
 
 </html>

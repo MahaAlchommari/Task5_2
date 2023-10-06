@@ -16,3 +16,18 @@ fetch("https://restcountries.com/v3.1/all")
   });
 var selectedOption = document.getElementById("dropdownMenuButton").value;
 document.getElementById("flagsDropdown").innerText = selectedOption;
+
+fetch("https://dummyjson.com/products")
+  .then(function (result) {
+    return result.json();
+  })
+  .then(function (result) {
+    console.log(result);
+    display(result);
+  });
+const card = document.querySelector(".products");
+function display(result) {
+  for (let index = 0; index < 5; index++) {
+    const element = result[index];
+  }
+}
